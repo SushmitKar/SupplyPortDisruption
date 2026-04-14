@@ -1,0 +1,263 @@
+port_a,port_b,lag,corr,pval
+Yokohama,Nagoya,1,0.2534,0.0
+Chiba,Yokohama,1,0.2378,0.0
+Nagoya,Kobe,1,0.2287,0.0
+Chiba,Nagoya,1,0.2256,0.0
+Mizushima,Nagoya,1,0.2233,0.0
+Nagoya,Yokohama,1,0.2191,0.0
+Kobe,Yokohama,1,0.2136,0.0
+Kobe,Nagoya,1,0.2115,0.0
+Sakai-Semboku,Kobe,1,0.2054,0.0
+Chiba,Kobe,1,0.1985,0.0
+Yokohama,Kobe,1,0.1975,0.0
+Ningbo,Shanghai (Pudong),1,0.1942,0.0
+Sakai-Semboku,Nagoya,1,0.1942,0.0
+Mizushima,Yokohama,1,0.1848,0.0
+Chiba,Mizushima,1,0.1818,0.0
+Ulsan,Nagoya,1,0.1692,0.0
+Sakai-Semboku,Yokohama,1,0.1679,0.0
+Mizushima,Sakai-Semboku,1,0.1676,0.0
+Nagoya,Sakai-Semboku,1,0.1645,0.0
+Mizushima,Kobe,1,0.1635,0.0
+Nagoya,Chiba,1,0.155,0.0
+Mizushima,Nagoya,2,0.1536,0.0
+Chiba,Sakai-Semboku,1,0.1531,0.0
+Mizushima,Yokohama,2,0.1499,0.0
+Mizushima,Chiba,1,0.1476,0.0
+Ulsan,Mizushima,1,0.1455,0.0
+Qingdao,Ningbo,1,0.1401,0.0
+Yokohama,Sakai-Semboku,1,0.1392,0.0
+Hong Kong,Guangzhou (Nansha),1,0.1377,0.0
+Yokohama,Nagoya,2,0.1372,0.0
+Sakai-Semboku,Chiba,1,0.1371,0.0
+Shanghai (Pudong),Ningbo,1,0.1352,0.0
+Chiba,Nagoya,2,0.1341,0.0
+Yokohama,Mizushima,1,0.1332,0.0
+Sakai-Semboku,Mizushima,1,0.1322,0.0
+Yokohama,Kobe,2,0.1297,0.0
+Nagoya,Mizushima,1,0.1295,0.0
+Kobe,Mizushima,1,0.1278,0.0
+Yokohama,Chiba,1,0.1257,0.0
+Kobe,Sakai-Semboku,1,0.1226,0.0
+Busan,Nagoya,1,0.1207,0.0
+Sakai-Semboku,Nagoya,2,0.1197,0.0
+Ningbo,Busan,1,0.1193,0.0
+Busan,Gwangyang (Kwangyang),1,0.1153,0.0
+Chiba,Yokohama,2,0.1143,0.0
+Kobe,Chiba,1,0.1104,0.0
+Mizushima,Kobe,2,0.1099,0.0
+Kobe,Nagoya,2,0.1097,0.0
+Nagoya,Kobe,2,0.109,0.0
+Shanghai (Pudong),Busan,1,0.1085,0.0
+Nagoya,Yokohama,2,0.1079,0.0
+Kaohsiung,Hong Kong,1,0.107,0.0
+Rotterdam,Kobe,6,0.1052,0.0
+Antwerp,Kobe,6,0.1048,0.0
+Ningbo,Ulsan,1,0.1035,0.0
+Kaohsiung,Guangzhou (Nansha),1,0.1024,0.0
+Busan,Ulsan,1,0.1022,0.0
+Chiba,Nagoya,3,0.1015,0.0
+Qingdao,Tianjin Xin Gang,1,0.1007,0.0
+Rotterdam,Kobe,7,0.0999,0.0
+Chiba,Kobe,2,0.0994,0.0
+Guangzhou (Nansha),Chiba,13,0.0965,0.0
+Busan,Mizushima,1,0.0964,0.0
+Ulsan,Sakai-Semboku,1,0.0963,0.0
+Rotterdam,Mizushima,7,0.0956,0.0
+Tianjin Xin Gang,Qingdao,1,0.0946,0.0
+Rotterdam,Guangzhou (Nansha),7,0.0924,0.0
+Shanghai (Pudong),Gwangyang (Kwangyang),1,0.0912,0.0
+Qingdao,Shanghai (Pudong),1,0.0912,0.0
+Chiba,Antwerp,1,0.0905,0.0
+Singapore,Mizushima,7,0.0904,0.0
+Guangzhou (Nansha),Mizushima,14,0.0902,0.0
+Sakai-Semboku,Antwerp,1,0.09,0.0
+Kobe,Yokohama,2,0.0894,0.0
+Sakai-Semboku,Yokohama,2,0.0877,0.0
+Guangzhou (Nansha),Tianjin Xin Gang,14,0.0877,0.0
+Ningbo,Nagoya,1,0.0875,0.0
+Yokohama,Rotterdam,1,0.0873,0.0
+Ulsan,Busan,1,0.087,0.0
+Rotterdam,Antwerp,14,0.0861,0.0
+Mizushima,Yokohama,3,0.0859,0.0
+Tianjin Xin Gang,Ningbo,1,0.085,0.0
+Guangzhou (Nansha),Nagoya,13,0.0847,0.0
+Yokohama,Kobe,3,0.0844,0.0
+Rotterdam,Antwerp,7,0.0837,0.0
+Antwerp,Rotterdam,14,0.0835,0.0
+Rotterdam,Antwerp,1,0.0832,0.0
+Ningbo,Kaohsiung,1,0.0832,0.0
+Rotterdam,Mizushima,1,0.0827,0.0
+Busan,Yokohama,1,0.0827,0.0
+Guangzhou (Nansha),Kobe,13,0.0823,0.0
+Sakai-Semboku,Kobe,2,0.0822,0.0
+Mizushima,Rotterdam,7,0.0819,0.0
+Ulsan,Gwangyang (Kwangyang),1,0.0819,0.0
+Kobe,Rotterdam,1,0.0808,0.0
+Rotterdam,Chiba,6,0.0808,0.0
+Kobe,Rotterdam,8,0.0806,0.0
+Chiba,Rotterdam,1,0.0804,0.0
+Kobe,Antwerp,1,0.0803,0.0
+Kobe,Antwerp,8,0.0802,0.0
+Mizushima,Kobe,3,0.0801,0.0
+Shanghai (Pudong),Qingdao,1,0.0801,0.0
+Guangzhou (Nansha),Antwerp,14,0.0799,0.0
+Ningbo,Qingdao,1,0.0797,0.0
+Busan,Sakai-Semboku,1,0.0797,0.0
+Ningbo,Tianjin Xin Gang,2,0.0795,0.0001
+Rotterdam,Ulsan,8,0.0793,0.0001
+Rotterdam,Sakai-Semboku,6,0.0789,0.0001
+Kaohsiung,Shanghai (Pudong),1,0.0787,0.0001
+Shanghai (Pudong),Guangzhou (Nansha),1,0.0785,0.0001
+Qingdao,Busan,2,0.0782,0.0001
+Qingdao,Guangzhou (Nansha),7,0.0776,0.0001
+Mizushima,Nagoya,3,0.0771,0.0001
+Guangzhou (Nansha),Kobe,6,0.0769,0.0001
+Singapore,Rotterdam,14,0.0769,0.0001
+Ulsan,Nagoya,2,0.0763,0.0001
+Ulsan,Chiba,1,0.0756,0.0001
+Guangzhou (Nansha),Sakai-Semboku,13,0.0748,0.0001
+Gwangyang (Kwangyang),Antwerp,7,0.0747,0.0001
+Ulsan,Yokohama,1,0.0739,0.0002
+Rotterdam,Nagoya,8,0.0736,0.0002
+Nagoya,Sakai-Semboku,2,0.0728,0.0002
+Sakai-Semboku,Rotterdam,1,0.0723,0.0002
+Tianjin Xin Gang,Guangzhou (Nansha),7,0.072,0.0002
+Chiba,Kobe,3,0.0719,0.0002
+Yokohama,Sakai-Semboku,2,0.0711,0.0003
+Ningbo,Mizushima,14,0.071,0.0003
+Singapore,Guangzhou (Nansha),7,0.0705,0.0003
+Rotterdam,Mizushima,6,0.0702,0.0003
+Ningbo,Mizushima,2,0.0702,0.0004
+Rotterdam,Yokohama,6,0.0696,0.0004
+Gwangyang (Kwangyang),Sakai-Semboku,13,0.0694,0.0004
+Sakai-Semboku,Guangzhou (Nansha),1,0.0688,0.0005
+Ningbo,Kobe,1,0.0686,0.0005
+Antwerp,Guangzhou (Nansha),7,0.0686,0.0005
+Mizushima,Chiba,3,0.0682,0.0005
+Busan,Nagoya,2,0.0678,0.0006
+Ningbo,Chiba,1,0.0677,0.0006
+Gwangyang (Kwangyang),Busan,1,0.0672,0.0006
+Shanghai (Pudong),Nagoya,2,0.0672,0.0006
+Shanghai (Pudong),Ulsan,1,0.0669,0.0007
+Hong Kong,Kobe,6,0.0665,0.0007
+Kaohsiung,Mizushima,12,0.0662,0.0008
+Ningbo,Port Klang,3,0.0662,0.0007
+Mizushima,Sakai-Semboku,2,0.0656,0.0008
+Kobe,Guangzhou (Nansha),8,0.0656,0.0008
+Kobe,Guangzhou (Nansha),1,0.0652,0.0009
+Busan,Chiba,1,0.0651,0.0009
+Sakai-Semboku,Kobe,7,0.065,0.0009
+Guangzhou (Nansha),Hong Kong,14,0.0649,0.001
+Guangzhou (Nansha),Hong Kong,12,0.0649,0.001
+Singapore,Antwerp,7,0.0648,0.001
+Yokohama,Nagoya,3,0.0645,0.001
+Chiba,Sakai-Semboku,3,0.0645,0.001
+Tianjin Xin Gang,Nagoya,4,0.0645,0.001
+Shanghai (Pudong),Yokohama,5,0.0642,0.0011
+Chiba,Sakai-Semboku,14,0.0642,0.0011
+Ningbo,Mizushima,6,0.0642,0.0011
+Kobe,Nagoya,3,0.064,0.0011
+Gwangyang (Kwangyang),Nagoya,7,0.0638,0.0012
+Mizushima,Antwerp,8,0.0637,0.0012
+Guangzhou (Nansha),Singapore,7,0.0634,0.0012
+Gwangyang (Kwangyang),Nagoya,1,0.0628,0.0014
+Ningbo,Yokohama,2,0.0628,0.0014
+Antwerp,Guangzhou (Nansha),14,0.0627,0.0014
+Shanghai (Pudong),Sakai-Semboku,14,0.0626,0.0015
+Shanghai (Pudong),Guangzhou (Nansha),2,0.0625,0.0014
+Mizushima,Chiba,4,0.0625,0.0015
+Ningbo,Chiba,2,0.0622,0.0015
+Guangzhou (Nansha),Rotterdam,7,0.0621,0.0016
+Qingdao,Chiba,1,0.0619,0.0016
+Ningbo,Gwangyang (Kwangyang),1,0.0618,0.0016
+Ningbo,Hong Kong,1,0.0617,0.0017
+Ningbo,Hong Kong,3,0.0617,0.0017
+Kaohsiung,Antwerp,12,0.0615,0.0018
+Gwangyang (Kwangyang),Yokohama,7,0.0613,0.0018
+Kaohsiung,Singapore,7,0.0612,0.0018
+Shanghai (Pudong),Mizushima,1,0.0611,0.0018
+Kaohsiung,Rotterdam,7,0.0611,0.0019
+Singapore,Qingdao,14,0.0609,0.002
+Qingdao,Busan,1,0.0609,0.0019
+Shanghai (Pudong),Mizushima,14,0.0607,0.002
+Ningbo,Kaohsiung,2,0.0606,0.002
+Mizushima,Port Klang,6,0.0604,0.0021
+Kaohsiung,Qingdao,4,0.0601,0.0022
+Sakai-Semboku,Mizushima,7,0.06,0.0023
+Gwangyang (Kwangyang),Kobe,13,0.0596,0.0024
+Qingdao,Rotterdam,7,0.0595,0.0025
+Tianjin Xin Gang,Busan,1,0.0592,0.0026
+Qingdao,Antwerp,8,0.0591,0.0026
+Rotterdam,Yokohama,8,0.059,0.0027
+Rotterdam,Mizushima,8,0.059,0.0027
+Sakai-Semboku,Yokohama,3,0.059,0.0027
+Rotterdam,Kobe,13,0.0589,0.0028
+Shanghai (Pudong),Hong Kong,14,0.0588,0.0028
+Antwerp,Ulsan,6,0.0588,0.0028
+Busan,Kobe,1,0.0586,0.0028
+Rotterdam,Yokohama,7,0.0585,0.0029
+Rotterdam,Kobe,8,0.0584,0.003
+Antwerp,Chiba,13,0.058,0.0032
+Rotterdam,Guangzhou (Nansha),8,0.058,0.0032
+Yokohama,Rotterdam,7,0.0579,0.0032
+Nagoya,Kobe,3,0.0578,0.0033
+Port Klang,Hong Kong,3,0.0576,0.0033
+Kaohsiung,Hong Kong,2,0.0576,0.0033
+Nagoya,Chiba,2,0.0574,0.0035
+Ningbo,Tianjin Xin Gang,1,0.0573,0.0035
+Ningbo,Yokohama,1,0.0573,0.0035
+Qingdao,Tianjin Xin Gang,2,0.0573,0.0035
+Gwangyang (Kwangyang),Kaohsiung,3,0.0572,0.0036
+Shanghai (Pudong),Sakai-Semboku,13,0.0571,0.0037
+Mizushima,Chiba,2,0.0569,0.0038
+Ningbo,Chiba,5,0.0567,0.0039
+Nagoya,Guangzhou (Nansha),8,0.0566,0.004
+Kaohsiung,Nagoya,4,0.0566,0.004
+Singapore,Kobe,13,0.0563,0.0042
+Qingdao,Ulsan,1,0.0561,0.0043
+Sakai-Semboku,Nagoya,3,0.056,0.0044
+Mizushima,Guangzhou (Nansha),8,0.0556,0.0047
+Guangzhou (Nansha),Mizushima,13,0.0555,0.0048
+Mizushima,Guangzhou (Nansha),14,0.0554,0.0049
+Chiba,Kobe,4,0.0554,0.0048
+Shanghai (Pudong),Mizushima,3,0.0554,0.0048
+Shanghai (Pudong),Mizushima,6,0.0553,0.0049
+Ningbo,Gwangyang (Kwangyang),3,0.0552,0.0049
+Ulsan,Mizushima,2,0.0552,0.0049
+Rotterdam,Nagoya,7,0.0552,0.005
+Rotterdam,Sakai-Semboku,7,0.0551,0.0051
+Chiba,Yokohama,3,0.0551,0.005
+Guangzhou (Nansha),Tianjin Xin Gang,13,0.0548,0.0054
+Antwerp,Busan,7,0.0546,0.0055
+Ningbo,Nagoya,2,0.0545,0.0055
+Ningbo,Busan,2,0.0543,0.0056
+Rotterdam,Nagoya,1,0.0542,0.0057
+Shanghai (Pudong),Qingdao,2,0.0539,0.006
+Guangzhou (Nansha),Gwangyang (Kwangyang),14,0.0539,0.0061
+Nagoya,Antwerp,1,0.0538,0.0061
+Guangzhou (Nansha),Chiba,12,0.0537,0.0063
+Shanghai (Pudong),Tianjin Xin Gang,3,0.0536,0.0064
+Shanghai (Pudong),Yokohama,4,0.0535,0.0064
+Shanghai (Pudong),Tianjin Xin Gang,7,0.0534,0.0065
+Chiba,Sakai-Semboku,2,0.0534,0.0066
+Kobe,Gwangyang (Kwangyang),8,0.0533,0.0067
+Mizushima,Nagoya,14,0.0532,0.0068
+Rotterdam,Guangzhou (Nansha),14,0.0526,0.0076
+Antwerp,Yokohama,6,0.0526,0.0074
+Mizushima,Busan,1,0.0524,0.0076
+Ningbo,Kobe,14,0.0523,0.0079
+Sakai-Semboku,Ulsan,7,0.0523,0.0078
+Yokohama,Antwerp,1,0.0522,0.0078
+Yokohama,Antwerp,7,0.052,0.0081
+Hong Kong,Kaohsiung,1,0.0515,0.0087
+Tianjin Xin Gang,Qingdao,2,0.0514,0.0089
+Kaohsiung,Sakai-Semboku,3,0.0512,0.0091
+Mizushima,Yokohama,4,0.0509,0.0095
+Hong Kong,Sakai-Semboku,6,0.0508,0.0097
+Gwangyang (Kwangyang),Nagoya,8,0.0507,0.0099
+Nagoya,Shanghai (Pudong),13,0.0506,0.0101
+Mizushima,Yokohama,14,0.0506,0.0101
+Port Klang,Busan,2,0.0505,0.0102
+Yokohama,Chiba,2,0.0503,0.0104
+Mizushima,Kobe,6,0.0502,0.0107
