@@ -1,0 +1,21 @@
+port,ARIMA_MAPE,HW_MAPE,Prophet_MAPE,XGB_MAPE,Best
+Antwerp,17.35,17.13,17.57,19.25,HW
+Busan,13.12,12.44,12.37,14.4,Prophet
+Chiba,29.85,26.78,26.24,26.72,Prophet
+Guangzhou (Nansha),17.38,18.16,20.22,17.44,ARIMA
+Gwangyang (Kwangyang),17.77,18.38,16.77,19.32,Prophet
+Hong Kong,13.01,12.74,12.15,12.36,Prophet
+Kaohsiung,26.47,25.9,26.19,,HW
+Kobe,27.31,27.43,27.12,21.78,XGB
+Mizushima,28.25,28.75,28.43,22.77,XGB
+Nagoya,30.89,29.41,29.25,26.39,XGB
+Ningbo,15.15,15.27,15.8,15.49,ARIMA
+Port Klang,13.6,15.12,14.08,15.12,ARIMA
+Qingdao,16.3,16.78,16.02,16.02,Prophet
+Rotterdam,12.44,11.8,11.48,13.24,Prophet
+Sakai-Semboku,29.96,29.92,27.51,27.79,Prophet
+Shanghai (Pudong),13.76,15.07,14.09,11.87,XGB
+Singapore,7.24,7.21,6.97,7.81,Prophet
+Tianjin Xin Gang,25.15,25.7,25.58,25.66,ARIMA
+Ulsan,24.8,24.94,29.14,29.88,ARIMA
+Yokohama,28.14,27.62,24.93,22.94,XGB
