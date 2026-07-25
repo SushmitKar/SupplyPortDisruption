@@ -9,9 +9,11 @@ to other ports — and if so, how fast and how far?**
 - **Port activity**: daily vessel call counts (`portcalls`) for global ports,
   2019–2026.
 - **Disruption events**: labeled real-world events (COVID-19 lockdowns, Suez
-  Canal blockage, Red Sea crisis) with severity levels, used to validate the
+  Canal blockage, Red Sea crisis) with severity levels, used to cross-reference the
   disruption signal against known ground truth.
 - Analysis is restricted to the top 20 ports by total vessel-call volume.
+
+![Daily vessel calls, top 5 ports](outputs/figures/01_port_trends.png)
 
 ## Method
 
@@ -48,11 +50,19 @@ disruption at one port predicts disruption at another shortly after.
 XGBoost outperforms classical models specifically for the Japanese port
 cluster (Kobe, Mizushima, Nagoya, Yokohama, Shanghai) — exactly where
 leader-lag features were available. Elsewhere, classical models (ARIMA,
-Holt-Winters, Prophet) remain competitive or better. This suggests that
+Holt-Winters, Prophet) remain competitive or better. In other words:
 added model complexity only helped where there was a specific, motivated
-signal to exploit but it didn't help uniformly.
+signal to exploit — it didn't help uniformly, and the results say so.
 
-Full per-port comparison: `final_comparison.csv`.
+![Model comparison — MAPE by port](outputs/figures/13_final_comparison.png)
+
+![XGBoost feature importance — Japanese cluster](outputs/figures/12_xgb_importance.png)
+
+The importance plots show why: `own_lag1` and `leader_lag1` dominate for
+every port in this cluster, meaning the model is genuinely leaning on the
+lag structure, not treating features arbitrarily.
+
+Full per-port comparison: `outputs/processed/final_comparison.csv`.
 
 ## Known limitations
 
