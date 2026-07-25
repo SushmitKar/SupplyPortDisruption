@@ -9,8 +9,8 @@ to other ports — and if so, how fast and how far?**
 - **Port activity**: daily vessel call counts (`portcalls`) for global ports,
   2019–2026.
 - **Disruption events**: labeled real-world events (COVID-19 lockdowns, Suez
-  Canal blockage, Red Sea crisis) with severity levels, used to cross-reference the
-  disruption signal against known ground truth.
+  Canal blockage, Red Sea crisis) with severity levels, used to cross-reference
+  the disruption signal against known ground truth.
 - Analysis is restricted to the top 20 ports by total vessel-call volume.
 
 ![Daily vessel calls, top 5 ports](outputs/figures/01_port_trends.png)
@@ -30,9 +30,16 @@ forecast stable hubs (Singapore, Rotterdam) well but produce flat, uninformative
 forecasts for volatile ports (Nagoya, Shanghai) — they can't anticipate
 external shocks.
 
-**3. Cross-port correlation.**
-Pairwise, lagged correlation between every port's PDE series, to test whether
-disruption at one port predicts disruption at another shortly after.
+**3. Cross-port correlation, with multiple-comparisons correction.**
+Pairwise, lagged correlation between every port's PDE series (20 ports ×
+19 possible leaders × 14 lags = ~5,300 tests), to test whether disruption at
+one port predicts disruption at another shortly after. Run at that scale,
+an uncorrected significance threshold would flag roughly 250–270 pairs from
+noise alone. A Benjamini-Hochberg FDR correction was applied across all tests,
+which reduced the "significant" pair count from 262 to 172. Each port's
+single strongest correlated "leader" — the one used downstream as an XGBoost
+feature — held stable before and after correction, meaning the core leader
+relationships were not among the noisy ones filtered out.
 
 **4. Advanced models.**
 - **VAR** on two port clusters (Japanese ports; Ningbo–Shanghai) to jointly
@@ -42,17 +49,14 @@ disruption at one port predicts disruption at another shortly after.
 - **Prophet** with known disruption events (COVID, Suez, Red Sea) added as
   explicit regressors.
 - **XGBoost** using each port's own lag features plus its statistically
-  strongest "leading" port's lags, with feature importance to interpret which
-  lags actually drive predictions.
+  strongest "leading" port's lags (post-correction), with feature importance
+  to interpret which lags actually drive predictions.
 
 ## Results
 
-XGBoost outperforms classical models specifically for the Japanese port
-cluster (Kobe, Mizushima, Nagoya, Yokohama, Shanghai) — exactly where
-leader-lag features were available. Elsewhere, classical models (ARIMA,
-Holt-Winters, Prophet) remain competitive or better. In other words:
-added model complexity only helped where there was a specific, motivated
-signal to exploit — it didn't help uniformly, and the results say so.
+XGBoost outperforms classical models for most of the Japanese port cluster
+and Shanghai (5 of 7 ports with leader-lag features), though not uniformly —
+Chiba and Sakai-Semboku still favor Prophet despite the same feature set.
 
 ![Model comparison — MAPE by port](outputs/figures/13_final_comparison.png)
 
@@ -68,25 +72,25 @@ Full per-port comparison: `outputs/processed/final_comparison.csv`.
 
 Being upfront about the current state, not just the results:
 
-- **Multiple comparisons are not yet corrected.** The cross-port correlation
-  step runs ~5,300 pairwise hypothesis tests (20 ports × 19 possible leaders ×
-  14 lags) at an uncorrected α = 0.05. At that scale, roughly 250–270
-  "significant" pairs would be expected from noise alone, even with zero true
-  contagion in the data. The reported "leader" relationships (and therefore
-  the XGBoost leader-lag features and the regional-contagion narrative) should
-  be treated as a hypothesis, not a confirmed finding, until a Bonferroni or
-  FDR correction is applied. This is the top item in progress.
-- The EDA notebook currently has a step that isn't self-contained (a variable
-  used later isn't defined earlier in the same notebook), so it doesn't yet
-  run cleanly top-to-bottom from a fresh kernel. Being fixed.
-- Weather/exogenous data aside from the three labeled disruption events isn't
-  used; the model relies on vessel-call history and event flags only.
+- **Zero-value edge case in MAPE.** A small number of ports have occasional
+  zero-vessel-call days in their test window, which makes standard MAPE
+  undefined at that point. Metric calculations mask these points explicitly
+  rather than silently propagating NaN, so per-port scores are always
+  computed from the well-defined subset of days.
+- **Weather/exogenous data** aside from the three labeled disruption events
+  isn't used; the model relies on vessel-call history and event flags only.
+- **Regional contagion is inferred from correlation and Granger causality,
+  not a causal experiment.** Even after correction, this identifies
+  statistically robust lead-lag relationships — it doesn't rule out shared
+  external causes (e.g. a common trade-lane shock) producing correlated
+  timing without one port literally causing the other's disruption.
 
 ## Tech stack
 
 Python · pandas · NumPy · statsmodels (ADF, ARIMA, VAR, Granger causality,
 seasonal decomposition) · pmdarima (auto-ARIMA) · Prophet · XGBoost ·
-scikit-learn (metrics) · matplotlib · seaborn
+scikit-learn (metrics) · statsmodels (multiple-testing correction) ·
+matplotlib · seaborn
 
 ## Repo structure
 
